@@ -57,6 +57,9 @@ One or both of these combinations are OFF in your installation but at least one 
     )
 ENDIF()
 
+### DEFINITION FOR BART ROOT DIR ######################################
+ADD_DEFINITIONS(-DBART_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
+
 ### GTEST/GMOCK  ######################################################
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}")
