@@ -14,7 +14,8 @@ class EquationBase {
       const std::string &equation_name,
       const dealii::ParameterHandler &prm,
       std::shared_ptr<FundamentalData<dim>> &dat_ptr);
-  ~EquationBase ();
+
+  virtual ~EquationBase ();
 
   /*!
    Virtual function to assemble bilinear form. Inside this function, volumetric,
